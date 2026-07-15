@@ -2,7 +2,7 @@ const paragraphs = [
   "I'm a designer working across motion, brand, and interface. I recently completed my MFA in Digital Arts at Bowling Green State University, where I built interactive installations and taught digital imaging.",
   "Before moving to the US, I spent six years leading design and R&D at IELTSDAILY, one of Iran's largest language academies, where I shipped hundreds of motion, brand, and editorial projects. I bring AI into my pipeline whenever it earns its place.",
   "I care about systems, craft, and clarity, in that order.",
-  "Open to opportunities in New York and remote.",
+  "Open to opportunities across the US and remote.",
 ];
 
 export default function About() {
