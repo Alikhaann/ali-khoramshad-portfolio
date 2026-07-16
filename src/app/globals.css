@@ -6,7 +6,39 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: #f5f3ee;
-  color: #111111;
+@keyframes float-avatar {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes float-shadow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(0.85);
+    opacity: 0.65;
+  }
+}
+
+.animate-float-avatar {
+  animation: float-avatar 3.5s ease-in-out infinite;
+}
+
+.animate-float-shadow {
+  animation: float-shadow 3.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-avatar,
+  .animate-float-shadow {
+    animation: none;
+  }
 }

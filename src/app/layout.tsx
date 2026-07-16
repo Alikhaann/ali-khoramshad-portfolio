@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/Nav";
-import PageFrame from "@/components/PageFrame";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -22,12 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${manrope.variable} font-sans antialiased bg-background text-foreground min-h-screen flex flex-col`}
-      >
-        <Nav />
-        <main className="flex-1 flex flex-col">{children}</main>
-        <PageFrame />
+      <body className={`${manrope.variable} font-sans antialiased`}>
+        {children}
       </body>
     </html>
   );
